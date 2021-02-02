@@ -18,7 +18,3 @@ let cullenites = ['Michael', 'Dusty', 'George', 'Vada'];
 for (let student of cullenites) {
   console.log(`welcome to node week, ${student}`);
 }
-
-$(document).ready(() => {
-  $(body).append('<h1>Hello World</h1>');
-});
