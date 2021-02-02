@@ -1,9 +1,13 @@
-console.log('js');
+let students = require('./another-script');
+let myFavoriteNumber = require('./my-favorite-number');
+
+console.log('students', students);
+console.log(myFavoriteNumber);
 
 let age = 30;
 
 if (age > 23) {
-  console.log('you are old man');
+  // console.log('you are old man');
 }
 
 function birthday() {
@@ -11,14 +15,13 @@ function birthday() {
   return age;
 }
 
-console.log(`happy birthday to you, you are ${birthday()}`);
-console.log(`happy birthday to you, you are ${birthday()}`);
-console.log(`happy birthday to you, you are ${birthday()}`);
-console.log(`happy birthday to you, you are ${birthday()}`);
+// console.log(`happy birthday to you, you are ${birthday()}`);
+// console.log(`happy birthday to you, you are ${birthday()}`);
+// console.log(`happy birthday to you, you are ${birthday()}`);
+// console.log(`happy birthday to you, you are ${birthday()}`);
 
-let students = require('./another-script.js');
 for (let student of students) {
-  console.log(`welcome to node week, ${student}`);
+  // console.log(`welcome to node week, ${student}`);
 }
 
 function sumOfRange(num1, num2) {
@@ -30,5 +33,3 @@ function sumOfRange(num1, num2) {
   }
   return sum;
 }
-
-console.log('sum of range', sumOfRange(4, 800));
