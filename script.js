@@ -1,11 +1,24 @@
-let students = require('./another-script');
-let myFavoriteNumber = require('./my-favorite-number');
+const cullenites = require('./students');
+const myFavoriteNumber = require('./my-favorite-number');
+const scream = require('./scream');
+const counter = require('./counter');
+const { addStudent } = require('./students');
 
-console.log('students', students);
-console.log(myFavoriteNumber);
+console.log('students', cullenites.students);
+console.log('instructor', cullenites.instructor);
+// console.log('my favorite number is', myFavoriteNumber);
+// console.log('Hello', scream('world'));
+addStudent('Josh');
+addStudent('Peter');
+console.log('students', cullenites.students);
+
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
 
 let age = 30;
-
 if (age > 23) {
   // console.log('you are old man');
 }
@@ -20,8 +33,8 @@ function birthday() {
 // console.log(`happy birthday to you, you are ${birthday()}`);
 // console.log(`happy birthday to you, you are ${birthday()}`);
 
-for (let student of students) {
-  // console.log(`welcome to node week, ${student}`);
+for (let student of cullenites.students) {
+  console.log(`welcome to node week, ${student}`);
 }
 
 function sumOfRange(num1, num2) {
